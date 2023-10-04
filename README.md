@@ -2,6 +2,8 @@
 
 This repo stores the BrickMMO documentation. This repo will be built using the free version of the [Berry](https://mui.com/store/items/berry-react-material-admin-free/) admin template. The overall feel and layout should be similar to the [MUI Documentation](https://mui.com/material-ui/getting-started/).
 
+THe build process uses the `docs` folder and is included in this repo and deployed using GitHub pages. 
+
 > This content is available at https://docs.brickmmo.com
 
 ---
