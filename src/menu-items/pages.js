@@ -15,25 +15,85 @@ const pages = {
   type: 'group',
   children: [
     {
-      id: 'authentication',
-      title: 'Authentication',
+      id: 'gettingstarted',
+      title: 'Getting Started',
       type: 'collapse',
-      icon: icons.IconKey,
-
+      icon: icons.IconWindmill,
       children: [
         {
-          id: 'login3',
-          title: 'Login',
+          id: 'overview',
+          title: 'Overview',
           type: 'item',
-          url: '/pages/login/login3',
-          target: true
+          url: '/getting-started/overview',
+          external: true,
+          target: '_blank',
+          breadcrumbs: true
         },
         {
-          id: 'register3',
-          title: 'Register',
+          id: 'installation',
+          title: 'Installation',
           type: 'item',
-          url: '/pages/register/register3',
-          target: true
+          external: true,
+          target: '_blank',
+          url: '/getting-started/installation',
+          breadcrumbs: true
+        },
+        {
+          id: 'units',
+          title: 'Units',
+          type: 'item',
+          external: true,
+          target: '_blank',
+          url: '/getting-started/units',
+          breadcrumbs: true
+        }
+      ]
+    },
+    {
+      id: 'building',
+      title: 'Building',
+      type: 'collapse',
+      icon: icons.IconWindmill,
+      children: [
+        {
+          id: 'overview',
+          title: 'Overview',
+          type: 'item',
+          url: '/building/overview',
+          target: false
+        },
+        {
+          id: 'blocks',
+          title: 'Blocks',
+          type: 'item',
+          external: true,
+          target: '_blank',
+          url: '/building/blocks',
+          breadcrumbs: true
+        },
+        {
+          id: 'satellite',
+          title: 'Satellite',
+          type: 'item',
+          external: true,
+          target: '_blank',
+          url: '/building/satellite',
+          breadcrumbs: true
+        }
+      ]
+    },
+    {
+      id: 'cli',
+      title: 'CLI',
+      type: 'collapse',
+      icon: icons.IconWindmill,
+      children: [
+        {
+          id: 'installation',
+          title: 'Installation',
+          type: 'item',
+          url: '/cli/installation',
+          target: false
         }
       ]
     }
