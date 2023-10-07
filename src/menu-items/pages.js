@@ -1,9 +1,11 @@
 // assets
-import { IconKey } from '@tabler/icons';
+import { IconKey, IconBook2, IconDownload } from '@tabler/icons';
 
 // constant
 const icons = {
-  IconKey
+  IconKey,
+  IconBook2,
+  IconDownload
 };
 
 // ==============================|| EXTRA PAGES MENU ITEMS ||============================== //
@@ -11,41 +13,36 @@ const icons = {
 const pages = {
   id: 'pages',
   title: 'Pages',
-  caption: 'Pages Caption',
+  caption: 'Documentation Steps',
   type: 'group',
   children: [
     {
       id: 'gettingstarted',
       title: 'Getting Started',
       type: 'collapse',
-      icon: icons.IconWindmill,
+      icon: icons.IconBook2,
       children: [
         {
           id: 'overview',
           title: 'Overview',
           type: 'item',
           url: '/getting-started/overview',
-          external: true,
-          target: '_blank',
-          breadcrumbs: true
+          target: '_blank'
         },
         {
-          id: 'installation',
+          id: 'GSinstallation',
           title: 'Installation',
           type: 'item',
-          external: true,
-          target: '_blank',
+          icon: icons.IconDownload,
           url: '/getting-started/installation',
-          breadcrumbs: true
+          target: '_blank'
         },
         {
           id: 'units',
           title: 'Units',
           type: 'item',
-          external: true,
           target: '_blank',
-          url: '/getting-started/units',
-          breadcrumbs: true
+          url: '/getting-started/units'
         }
       ]
     },
@@ -60,25 +57,22 @@ const pages = {
           title: 'Overview',
           type: 'item',
           url: '/building/overview',
-          target: false
+          target: '_blank'
         },
         {
           id: 'blocks',
           title: 'Blocks',
           type: 'item',
-          external: true,
-          target: '_blank',
           url: '/building/blocks',
-          breadcrumbs: true
+          target: '_blank'
         },
         {
           id: 'satellite',
           title: 'Satellite',
           type: 'item',
-          external: true,
-          target: '_blank',
           url: '/building/satellite',
-          breadcrumbs: true
+          breadcrumbs: true,
+          target: '_blank'
         }
       ]
     },
@@ -92,8 +86,9 @@ const pages = {
           id: 'installation',
           title: 'Installation',
           type: 'item',
+          icon: icons.IconDownload,
           url: '/cli/installation',
-          target: false
+          target: '_blank'
         }
       ]
     }
