@@ -26,23 +26,23 @@ const pages = {
           id: 'overview',
           title: 'Overview',
           type: 'item',
-          url: '/getting-started/overview',
-          target: '_blank'
+          url: 'getting-started/overview',
+          breadcrumbs: true
         },
         {
           id: 'GSinstallation',
           title: 'Installation',
           type: 'item',
           icon: icons.IconDownload,
-          url: '/getting-started/installation',
-          target: '_blank'
+          url: 'getting-started/installation',
+          breadcrumbs: true
         },
         {
           id: 'units',
           title: 'Units',
           type: 'item',
-          target: '_blank',
-          url: '/getting-started/units'
+          
+          url: 'getting-started/units'
         }
       ]
     },
@@ -56,23 +56,22 @@ const pages = {
           id: 'overview',
           title: 'Overview',
           type: 'item',
-          url: '/building/overview',
-          target: '_blank'
+          url: 'building/overview',
+          breadcrumbs: true
         },
         {
           id: 'blocks',
           title: 'Blocks',
           type: 'item',
-          url: '/building/blocks',
-          target: '_blank'
+          url: 'building/blocks',
+          breadcrumbs: true
         },
         {
           id: 'satellite',
           title: 'Satellite',
           type: 'item',
-          url: '/building/satellite',
-          breadcrumbs: true,
-          target: '_blank'
+          url: 'building/satellite',
+          breadcrumbs: true
         }
       ]
     },
@@ -87,8 +86,8 @@ const pages = {
           title: 'Installation',
           type: 'item',
           icon: icons.IconDownload,
-          url: '/cli/installation',
-          target: '_blank'
+          url: 'cli/installation',
+          breadcrumbs: true
         }
       ]
     }
